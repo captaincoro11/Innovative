@@ -10,7 +10,7 @@ const MainPart = () => {
         async function fetchData(){
             try{
                 setLoading(true);
-        const response = await axios.get('http://localhost:8080/response')
+        const response = await axios.get('https://innovative-backend.vercel.app/response')
           
         const newReponse = Object.entries(response.data);
         const newArra = newReponse[2][1];
